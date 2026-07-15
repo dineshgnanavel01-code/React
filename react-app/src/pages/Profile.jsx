@@ -2,7 +2,10 @@ export default function Profile(){
 
 return(
 
-<div className="container">
+<section className="profile-page">
+
+
+<div className="page-box">
 
 
 <h1>
@@ -10,9 +13,9 @@ Customer Profile
 </h1>
 
 
-<p>
-Name : Rahul Kumar
-</p>
+<h3>
+Rahul Kumar
+</h3>
 
 
 <p>
@@ -20,8 +23,20 @@ Membership : Premium
 </p>
 
 
+<p>
+Cars Purchased : 3
+</p>
+
+
+<p>
+Reward Points : 2500
+</p>
+
+
 </div>
 
+
+</section>
 
 )
 

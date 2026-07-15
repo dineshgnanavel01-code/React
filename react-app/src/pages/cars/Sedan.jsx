@@ -1,26 +1,42 @@
+import sedanImage from "../../assets/sedan.jpg";
+
+
 export default function Sedan(){
 
 return(
 
-<div className="card">
+<div className="car-card">
 
 
-<h2>Sedan Cars</h2>
+<img 
+src={sedanImage}
+alt="Sedan Car"
+/>
+
+
+<h2>
+Sedan Cars
+</h2>
 
 
 <p>
-• Honda City
+🚘 Honda City
 </p>
 
 
 <p>
-• Hyundai Verna
+🚘 Hyundai Verna
 </p>
 
 
 <p>
-• Skoda Slavia
+🚘 Skoda Slavia
 </p>
+
+
+<button>
+View Details
+</button>
 
 
 </div>

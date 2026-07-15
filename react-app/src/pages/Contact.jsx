@@ -2,7 +2,10 @@ export default function Contact(){
 
 return(
 
-<div className="container">
+<section className="contact-page">
+
+
+<div className="page-box">
 
 
 <h1>
@@ -10,19 +13,30 @@ Contact Us
 </h1>
 
 
-<input placeholder="Name"/>
+<input 
+placeholder="Enter Name"
+/>
 
-<input placeholder="Email"/>
 
-<textarea placeholder="Message"/>
+<input 
+placeholder="Enter Email"
+/>
+
+
+<textarea
+placeholder="Enter Message"
+/>
 
 
 <button>
-Send
+Send Message
 </button>
 
 
 </div>
+
+
+</section>
 
 )
 

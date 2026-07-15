@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {BrowserRouter,Routes,Route} from "react-router-dom";
 
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
@@ -13,46 +13,49 @@ import SUV from "./pages/cars/SUV";
 import Sedan from "./pages/cars/Sedan";
 import Hatchback from "./pages/cars/Hatchback";
 
-function App() {
 
-  return (
+function App(){
 
-    <BrowserRouter>
+return(
 
-      <Navbar />
+<BrowserRouter>
 
-      <Routes>
-
-        <Route path="/" element={<Home />} />
-
-        <Route path="/about" element={<About />} />
+<Navbar/>
 
 
-        {/* Nested Routing */}
-        <Route path="/cars" element={<Cars />}>
+<Routes>
 
-          <Route path="suv" element={<SUV />} />
+<Route path="/" element={<Home/>}/>
 
-          <Route path="sedan" element={<Sedan />} />
-
-          <Route path="hatchback" element={<Hatchback />} />
-
-        </Route>
+<Route path="/about" element={<About/>}/>
 
 
-        <Route path="/contact" element={<Contact />} />
+<Route path="/cars" element={<Cars/>}>
 
-        <Route path="/profile" element={<Profile />} />
+<Route path="suv" element={<SUV/>}/>
+
+<Route path="sedan" element={<Sedan/>}/>
+
+<Route path="hatchback" element={<Hatchback/>}/>
+
+</Route>
 
 
-      </Routes>
+<Route path="/contact" element={<Contact/>}/>
 
 
-      <Footer />
+<Route path="/profile" element={<Profile/>}/>
 
-    </BrowserRouter>
 
-  );
+</Routes>
+
+
+<Footer/>
+
+</BrowserRouter>
+
+)
+
 }
 
 export default App;

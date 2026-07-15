@@ -2,17 +2,21 @@ export default function About(){
 
 return(
 
-<div className="container">
+<section className="about-page">
+
+
+<div className="page-box">
+
 
 <h1>
-About Our Showroom
+About AutoWorld
 </h1>
 
 
 <p>
 
-AutoWorld is a premium car showroom providing
-latest models from trusted automobile brands.
+AutoWorld is a premium automobile showroom providing
+quality vehicles from trusted brands.
 
 </p>
 
@@ -23,12 +27,15 @@ latest models from trusted automobile brands.
 
 <li>5000+ Happy Customers</li>
 
-<li>100+ Cars Available</li>
+<li>100+ Premium Cars</li>
 
 </ul>
 
 
 </div>
+
+
+</section>
 
 )
 

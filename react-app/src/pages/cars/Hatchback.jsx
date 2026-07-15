@@ -1,9 +1,17 @@
-export default function Hatchback(){
+import hatchbackImage from "../../assets/hatchback.jpg";
 
+
+export default function Hatchback(){
 
 return(
 
-<div className="card">
+<div className="car-card">
+
+
+<img 
+src={hatchbackImage}
+alt="Hatchback Car"
+/>
 
 
 <h2>
@@ -12,19 +20,23 @@ Hatchback Cars
 
 
 <p>
-• Maruti Swift
+🚙 Maruti Swift
 </p>
 
 
 <p>
-• Hyundai i20
+🚙 Hyundai i20
 </p>
 
 
 <p>
-• Tata Tiago
+🚙 Tata Tiago
 </p>
 
+
+<button>
+View Details
+</button>
 
 
 </div>
