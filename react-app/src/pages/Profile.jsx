@@ -1,39 +1,28 @@
-import {useRef} from "react";
-
-
-function Profile(){
-
-
-const input=useRef();
-
-
+export default function Profile(){
 
 return(
 
-<div>
+<div className="container">
 
 
-<input ref={input}/>
+<h1>
+Customer Profile
+</h1>
 
 
-<button
+<p>
+Name : Rahul Kumar
+</p>
 
-onClick={()=>
-input.current.focus()
-}
 
->
-
-Focus
-
-</button>
+<p>
+Membership : Premium
+</p>
 
 
 </div>
 
+
 )
 
 }
-
-
-export default Profile;

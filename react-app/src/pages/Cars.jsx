@@ -1,97 +1,46 @@
-import {useEffect,useState} from "react";
-import {useSearchParams} from "react-router-dom";
-
-import CarCard from "../components/CarCard";
+import {NavLink,Outlet} from "react-router-dom";
 
 
-function Cars(){
-
-
-const [cars,setCars]=useState([]);
-
-
-const [searchParams]=useSearchParams();
-
-
-const brand=searchParams.get("brand");
-
-
-
-useEffect(()=>{
-
-fetch("https://fakestoreapi.com/products")
-
-.then(res=>res.json())
-
-.then(data=>{
-
-setCars(
-data.map(item=>({
-
-id:item.id,
-name:item.title,
-price:item.price,
-model:"2026"
-
-}))
-)
-
-})
-
-.catch(error=>{
-
-console.log(error);
-
-});
-
-
-},[]);
-
+export default function Cars(){
 
 
 return(
 
-<div>
+<div className="container">
+
 
 <h1>
 Available Cars
 </h1>
 
 
-{
-
-brand &&
-
-<h3>
-Brand : {brand}
-</h3>
-
-}
+<div className="menu">
 
 
+<NavLink to="suv">
+SUV
+</NavLink>
 
-{
 
-cars.map(car=>(
+<NavLink to="sedan">
+Sedan
+</NavLink>
 
-<CarCard
 
-key={car.id}
-
-car={car}
-
-/>
-
-))
-
-}
+<NavLink to="hatchback">
+Hatchback
+</NavLink>
 
 
 </div>
 
+
+<Outlet/>
+
+
+</div>
+
+
 )
 
 }
-
-
-export default Cars;

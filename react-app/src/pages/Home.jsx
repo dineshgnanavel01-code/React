@@ -1,23 +1,27 @@
-function Home(){
+export default function Home(){
 
 return(
 
-<div>
+<section className="hero">
+
 
 <h1>
-Welcome to Premium Car Showroom
+Welcome to AutoWorld
 </h1>
 
+
 <p>
-Explore luxury cars, sports cars and family vehicles.
+Find your dream car with premium quality and affordable prices.
 </p>
 
 
-</div>
+<button>
+Explore Cars
+</button>
+
+
+</section>
 
 )
 
 }
-
-
-export default Home;

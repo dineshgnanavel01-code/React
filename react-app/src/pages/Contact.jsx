@@ -1,66 +1,29 @@
-import {useState} from "react";
-
-
-function Contact(){
-
-
-const [email,setEmail]=useState("");
-
-const [message,setMessage]=useState("");
-
-
-
-function submit(e){
-
-e.preventDefault();
-
-
-if(!email.includes("@"))
-
-setMessage("Invalid Email");
-
-else
-
-setMessage("Message Sent Successfully");
-
-
-}
-
-
+export default function Contact(){
 
 return(
 
-<form onSubmit={submit}>
+<div className="container">
 
 
-<input
+<h1>
+Contact Us
+</h1>
 
-value={email}
 
-placeholder="Email"
+<input placeholder="Name"/>
 
-onChange={
-e=>setEmail(e.target.value)
-}
+<input placeholder="Email"/>
 
-/>
+<textarea placeholder="Message"/>
 
 
 <button>
-Submit
+Send
 </button>
 
 
-<p>
-{message}
-</p>
-
-
-</form>
+</div>
 
 )
 
 }
-
-
-export default Contact;
