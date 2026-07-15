@@ -1,61 +1,78 @@
-import {BrowserRouter,Routes,Route} from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 
-import Navbar from "./component/Navbar";
-import Footer from "./component/Footer";
+import Layout from "./components/Layout";
 
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Cars from "./pages/Cars";
-import Contact from "./pages/Contact";
-import Profile from "./pages/Profile";
+import Dashboard from "./pages/Dashboard";
+import Vehicles from "./pages/Vehicles";
+import Customers from "./pages/Customers";
+import Drivers from "./pages/Drivers";
+import Bookings from "./pages/Bookings";
 
-import SUV from "./pages/cars/SUV";
-import Sedan from "./pages/cars/Sedan";
-import Hatchback from "./pages/cars/Hatchback";
+import Services from "./pages/Services/Services";
+import MonthlyBookings from "./pages/Services/MonthlyBookings";
+import Reports from "./pages/Services/Reports";
 
 
 function App(){
 
 return(
 
-<BrowserRouter>
-
-<Navbar/>
-
-
 <Routes>
+
+
+<Route element={<Layout/>}>
+
 
 <Route path="/" element={<Home/>}/>
 
-<Route path="/about" element={<About/>}/>
+<Route path="/dashboard" element={<Dashboard/>}/>
+
+<Route path="/vehicles" element={<Vehicles/>}/>
+
+<Route path="/customers" element={<Customers/>}/>
+
+<Route path="/drivers" element={<Drivers/>}/>
 
 
-<Route path="/cars" element={<Cars/>}>
+<Route 
+path="/bookings/:id" 
+element={<Bookings/>}
+/>
 
-<Route path="suv" element={<SUV/>}/>
 
-<Route path="sedan" element={<Sedan/>}/>
 
-<Route path="hatchback" element={<Hatchback/>}/>
+<Route 
+path="/services" 
+element={<Services/>}
+>
+
+
+<Route 
+path="monthly"
+element={<MonthlyBookings/>}
+/>
+
+
+<Route 
+path="reports"
+element={<Reports/>}
+/>
+
 
 </Route>
 
 
-<Route path="/contact" element={<Contact/>}/>
 
-
-<Route path="/profile" element={<Profile/>}/>
+</Route>
 
 
 </Routes>
 
 
-<Footer/>
-
-</BrowserRouter>
-
 )
 
 }
+
 
 export default App;

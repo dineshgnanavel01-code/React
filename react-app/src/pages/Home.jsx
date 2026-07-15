@@ -1,69 +1,36 @@
-import Banner from "../component/Banner";
+import BookingForm from "../components/BookingForm";
+import Collection from "../components/Collection";
 
-export default function Home() {
 
-  return (
+function Home(){
 
+  return(
     <>
 
-      <Banner
-        title="Welcome to AutoWorld"
-        description="Find your dream car with premium quality, trusted brands and affordable prices."
-        buttonText="Explore Cars"
-      />
+      <section className="hero">
 
+        <div className="overlay">
 
-      <section className="features">
+          <h1>
+            Luxury Car Rental
+          </h1>
 
-        <h2>Why Choose AutoWorld?</h2>
+          <p>
+            Book premium cars anytime anywhere
+          </p>
 
-
-        <div className="feature-grid">
-
-
-          <div className="feature-card">
-
-            <h3>🚗 Premium Cars</h3>
-
-            <p>
-              Latest models from top automobile brands.
-            </p>
-
-          </div>
-
-
-
-          <div className="feature-card">
-
-            <h3>💰 Best Price</h3>
-
-            <p>
-              Affordable deals with flexible finance options.
-            </p>
-
-          </div>
-
-
-
-          <div className="feature-card">
-
-            <h3>🛠 Service Support</h3>
-
-            <p>
-              Complete maintenance and customer support.
-            </p>
-
-          </div>
-
+          <BookingForm/>
 
         </div>
-
 
       </section>
 
 
+      <Collection/>
+
     </>
-
-  );
-
+  )
 }
+
+
+export default Home;
