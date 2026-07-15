@@ -178,7 +178,6 @@ border-radius:10px;
 
 
 
-
 .table {
   width:90%;
   margin:auto;
@@ -207,7 +206,7 @@ border-radius:10px;
 
 
 .vehicle-image.innova {
-  background-image:url("./assets/tto");
+  background-image:url("./assets/toyato.jpg");
 }
 
 
