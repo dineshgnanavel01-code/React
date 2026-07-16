@@ -41,26 +41,25 @@ font-weight:bold;
 }
 
 
-.hero-main {
-  height: 90vh;
-  background: linear-gradient(rgba(201,47,47,0.65), rgba(0,0,0,.65)),
-              url("./assets/car-bg.jpg") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
+.hero{
+height:90vh;
+background:
+linear-gradient(
+rgba(0,0,0,.65),
+rgba(0,0,0,.65)
+),
+
+url("./assets/car-bg.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+text-align:center;
 }
 
-.hero-luxury {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: linear-gradient(135deg, rgba(0,0,0,0.75), rgba(20,20,50,0.75)),
-              url("./assets/car-bg.jpg") center/cover fixed;
-}
+
 
 .hero-content h1{
 font-size:60px;
@@ -143,7 +142,7 @@ border-radius:10px;
   background:
     linear-gradient(
       135deg,
-      rgba(150, 141, 141, 0.75),
+      rgba(210, 7, 7, 0.75),
       rgba(3, 76, 212, 0.75)
     ),
     url("./assets/vehicle-bg.jpg");
@@ -179,6 +178,7 @@ border-radius:10px;
 
 
 
+
 .table {
   width:90%;
   margin:auto;
@@ -207,16 +207,16 @@ border-radius:10px;
 
 
 .vehicle-image.innova {
-   background-image: url("./assets/toyota.jpg");
+  background-image:url("./assets/innova1.jpg");
 }
 
 
 .vehicle-image.bmw {
-  background-image: url("./assets/bmw1.jpg");
+  background-image:url("./assets/BMW1.jpg");
 }
 
 .vehicle-image.mercedes {
-   background-image: url("./assets/mercedes.jpg");
+  background-image:url("./assets/mercends.jpg");
 }
 
 
@@ -357,20 +357,26 @@ border-radius:10px;
   background-image: url("./assets/customer.jpg");
 }
 
-.hero{
+.hero {
+
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
     background:
     linear-gradient(
         135deg,
-        rgba(0,0,0,.75),
-        rgba(20,20,50,.75)
+        rgba(0,0,0,0.75),
+        rgba(20,20,50,0.75)
     ),
-    url("./assets/car-bg.jpg");
+    url("/images/luxury-car.jpg");
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
 }
+
 
 
 .overlay {
@@ -388,7 +394,7 @@ border-radius:10px;
     border:
     1px solid rgba(255,255,255,0.3);
     box-shadow:
-    0 30px 70px rgba(0,0,0,0.7);
+    0 30px 70px rgba(195, 173, 173, 0.7);
 
     animation:showHero 1.2s ease;
 }
@@ -397,31 +403,33 @@ border-radius:10px;
 
 
 
-.overlay h1{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size:70px;
+.overlay h1 {
+    font-family:'Cinzel', serif;
+    font-size:75px;
     font-weight:900;
-    color:#42c41a;
-    letter-spacing:4px;
+    letter-spacing:5px;
     text-transform:uppercase;
-    text-shadow:0 8px 20px black;
-    margin-bottom:20px;
+    color:#ffd700;
+    text-shadow:
+    0 10px 30px black;
 }
 
 
 
 
-.overlay p{
-    font-family:'Poppins',sans-serif;
+
+.overlay p {
+    font-family:'Poppins', sans-serif;
     font-size:28px;
-    color:#fff;
-    margin-bottom:35px;
+    font-weight:600;
+   color:white;
+    margin:25px 0 40px;
 }
+
 
 .overlay form {
     width:100%;
     display:flex;
-    align-items: center;
     justify-content:center;
     flex-wrap:wrap;
     gap:15px;
@@ -435,8 +443,8 @@ border-radius:10px;
     background:
     linear-gradient(
         45deg,
-        #504f48,
-        #e2a152
+        #ffd700,
+        #ff8c00
     );
     font-size:18px;
     font-weight:700;
@@ -448,7 +456,7 @@ border-radius:10px;
 .overlay button:hover {
     transform:scale(1.1);
     box-shadow:
-    0 15px 35px rgba(255, 217, 0, 0.904);
+    0 15px 35px rgba(255,215,0,0.6);
 }
 
 
@@ -464,17 +472,14 @@ border-radius:10px;
     }
 }
 
-@media (max-width:768px){
 
-    .overlay{
-        padding:50px 25px;
-    }
-
-    .overlay h1{
+@media(max-width:768px){
+    .overlay h1 {
         font-size:40px;
     }
 
-    .overlay p{
+
+    .overlay p {
         font-size:18px;
     }
 }
@@ -486,7 +491,7 @@ border-radius:10px;
     text-transform:uppercase;
     letter-spacing:4px;
     text-shadow:
-    0 8px 20px black;
+    0 8px 20px rgb(141, 151, 88);
 }
 
 
@@ -546,7 +551,7 @@ border-radius:10px;
 .collection h2 {
 
     text-align:center;
-    color:#ffd700;
+    color:#e7c711;
     font-size:50px;
     font-weight:900;
     text-transform:uppercase;
@@ -603,7 +608,7 @@ border-radius:10px;
 
 
 .car-image.suv {
-   background-image: url("./assets/suv.jpg");
+    background-image:url("./assets/suv.jpg");
 }
 
 
@@ -612,7 +617,7 @@ border-radius:10px;
 }
 
 .car-image.hatch {
-    background-image: url("./assets/hatchback.jpg");
+    background-image:url("./assets/hatchback.jpg");
 
 }
 
@@ -759,7 +764,7 @@ border-radius:10px;
     justify-content:center;
     align-items:center;
     text-align:center;
-  font-size: 60px;
+    font: size 60px;
     font-weight:900;
     color:#433b06;
     text-transform:uppercase;
@@ -1111,17 +1116,26 @@ border-radius:10px;
 }
 
 .navbar {
-  width: 100%;
-  padding: 18px 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(135deg, #111827, #1f2937);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+
+    width:100%;
+    padding:18px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:
+    linear-gradient(
+        135deg,
+        #111827,
+        #1f2937
+    );
+    box-shadow:
+    0 8px 25px rgba(0,0,0,0.4);
+    position:sticky;
+
+    top:0;
+    z-index:1000;
 }
+
 
 .navbar h2 {
 
@@ -1194,20 +1208,23 @@ border-radius:10px;
     }
 
 }
+*{
+    box-sizing:border-box;
+}
 
-.services-page {
+.services-page{
     min-height:100vh;
-    padding:60px 0;
+    padding:60px 20px;
     display:flex;
     justify-content:center;
+    align-items:center;
     background:
     linear-gradient(
-        135deg,
-        rgba(234, 118, 118, 0.932),
-        rgb(242, 203, 10)
+        rgba(0,0,0,.75),
+        rgba(17,24,39,.9)
     ),
-
     url("./assets/service-bg.jpg");
+
     background-size:cover;
     background-position:center;
     background-attachment:fixed;
@@ -1215,63 +1232,169 @@ border-radius:10px;
 }
 
 
-.services-page .container {
-    text-align:center;
+
+
+.services-container{
+    width:900px;
     padding:50px;
-    border-radius:30px;
+    text-align:center;
     background:
-    rgba(96, 17, 17, 0.936);
+    rgba(255,255,255,.12);
     backdrop-filter:blur(15px);
-    box-shadow:
-    0 25px 60px rgba(0,0,0,0.7);
-}
-
-
-.services-page h1 {
-    color:#ffd700;
-    font-size:50px;
-    font-weight:900;
-    text-transform:uppercase;
-    letter-spacing:3px;
-    margin-bottom:40px;
-    text-shadow:
-    0 8px 20px black;
-
-}
-
-
-.services-page .btn {
-    margin:15px;
-    padding:14px 40px;
     border-radius:30px;
-    font-weight:bold;
+    box-shadow:
+    0 25px 60px rgba(0,0,0,.8);
+
+}
+
+
+.service-btn {
+    text-decoration: none;
+    display: inline-block;
+    padding:15px 45px;
+    margin:20px;
+    border-radius:30px;
     font-size:18px;
+    font-weight:900;
     transition:.3s;
 }
 
 
-.btn-custom {
+
+.monthly-btn {
+
     background:
     linear-gradient(
         45deg,
         #ffd700,
-        #ff8800
+        #ff8c00
     );
-    color:black;
-    border:none;
+
+    color:#111827;
+
+    border:2px solid #ffd700;
 }
 
 
-.services-page .btn:hover {
-    transform:translateY(-5px) scale(1.05);
+
+.reports-btn {
+    background:
+    linear-gradient(
+        45deg,
+        #2563eb,
+        #06b6d4
+    );
+    color:rgb(0, 221, 246);  
+    border:2px solid #06b6d4;
+}
+
+
+.monthly-btn:hover {
+    background:#111827;
+    color:#ffd700;
+
+}
+
+
+.reports-btn:hover {
+    background:#004cf0;
+    color:#06b6d4;
+
+}
+
+
+.service-btn:hover {
+    transform:translateY(-5px);
     box-shadow:
     0 10px 30px rgba(255,215,0,.5);
+
 }
 
 
-.services-page hr {
+hr{
+
+    border:2px solid #ffd700;
     margin:40px 0;
-    border:
-    2px solid #ffd700;
+
+}
+
+.reports-card,
+.monthly-card{
+
+    margin-top:30px;
+    color:white;
+    padding:35px;
+    border-radius:25px;
+    background:
+    rgb(255, 251, 251);
+    box-shadow:
+    0 15px 40px rgb(242, 242, 242);
+
+}
+
+
+
+.reports-card h2,
+.monthly-card h2{
+    color:#00ffff;
+    font-size:35px;
+    font-weight:900;
+
+}
+
+
+
+
+
+.reports-card li{
+
+    list-style:none;
+    color:white;
+    font-size:22px;
+    margin:15px;
+    padding:15px;
+    border-left:5px solid #ffd700;
+    background:
+    rgba(255,255,255,.1);
+
+}
+
+
+
+
+
+table{
+
+    width:100%;
+    margin-top:25px;
+    border-collapse:collapse;
+
+}
+
+
+
+th{
+
+    background:#ffd700;
+    color:rgb(1, 13, 14);
+    padding:15px;
+
+}
+
+
+
+td{
+
+    color:white;
+    padding:15px;
+    background:
+    rgba(255,255,255,.1);
+
+}
+
+
+tr:hover td{
+    background:
+    rgba(255,215,0,.25);
 
 }

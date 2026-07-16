@@ -6,7 +6,7 @@ function Services(){
 
 return(
 
-<div className="container mt-5">
+<div >
 
 
 <h1>
@@ -15,21 +15,16 @@ Rental Services
 
 
 <Link
-className="btn btn-CC"
-to="monthly"
+
 >
 
 Monthly Bookings
 
 </Link>
 
-
-
 <Link
 
-className="btn btn-warning"
 
-to="reports"
 
 >
 

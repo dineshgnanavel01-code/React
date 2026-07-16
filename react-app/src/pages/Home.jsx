@@ -7,15 +7,24 @@ function Home(){
   return(
     <>
 
-      <section class="hero">
-    <div class="overlay">
-        <h1>Luxury Car Rental</h1>
-        <p>Drive Your Dream Car Today</p>
-        <form>
-            <button>Book Now</button>
-        </form>
-    </div>
-</section>
+      <section className="hero">
+
+        <div className="overlay">
+
+          <h1>
+            Luxury Car Rental
+          </h1>
+
+          <p>
+            Book premium cars anytime anywhere
+          </p>
+
+          <BookingForm/>
+
+        </div>
+
+      </section>
+
 
       <Collection/>
 
