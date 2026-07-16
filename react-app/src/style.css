@@ -403,29 +403,26 @@ border-radius:10px;
 
 
 
-.overlay h1 {
-    font-family:'Cinzel', serif;
-    font-size:75px;
+.overlay h1{
+    font-family:'Cinzel',serif;
+    font-size:70px;
     font-weight:900;
-    letter-spacing:5px;
-    text-transform:uppercase;
     color:#ffd700;
-    text-shadow:
-    0 10px 30px black;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    text-shadow:0 8px 20px black;
+    margin-bottom:20px;
 }
 
 
 
 
-
-.overlay p {
-    font-family:'Poppins', sans-serif;
+.overlay p{
+    font-family:'Poppins',sans-serif;
     font-size:28px;
-    font-weight:600;
-   color:white;
-    margin:25px 0 40px;
+    color:#fff;
+    margin-bottom:35px;
 }
-
 
 .overlay form {
     width:100%;
@@ -472,14 +469,17 @@ border-radius:10px;
     }
 }
 
+@media (max-width:768px){
 
-@media(max-width:768px){
-    .overlay h1 {
+    .overlay{
+        padding:50px 25px;
+    }
+
+    .overlay h1{
         font-size:40px;
     }
 
-
-    .overlay p {
+    .overlay p{
         font-size:18px;
     }
 }
