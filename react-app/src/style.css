@@ -41,25 +41,26 @@ font-weight:bold;
 }
 
 
-.hero{
-height:90vh;
-background:
-linear-gradient(
-rgba(201, 47, 47, 0.65),
-rgba(0,0,0,.65)
-),
-
-url("./assets/car-bg.jpg");
-background-size:cover;
-background-position:center;
-display:flex;
-align-items:center;
-justify-content:center;
-color:white;
-text-align:center;
+.hero-main {
+  height: 90vh;
+  background: linear-gradient(rgba(201,47,47,0.65), rgba(0,0,0,.65)),
+              url("./assets/car-bg.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
 }
 
-
+.hero-luxury {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(0,0,0,0.75), rgba(20,20,50,0.75)),
+              url("./assets/car-bg.jpg") center/cover fixed;
+}
 
 .hero-content h1{
 font-size:60px;
@@ -206,16 +207,16 @@ border-radius:10px;
 
 
 .vehicle-image.innova {
-  background-image:url("./assets/toyato.jpg");
+   background-image: url("./assets/toyota.jpg");
 }
 
 
 .vehicle-image.bmw {
-  background-image:url("./assets/BMW1.jpg");
+  background-image: url("./assets/bmw1.jpg");
 }
 
 .vehicle-image.mercedes {
-  background-image:url("./assets/mercends.jpg");
+   background-image: url("./assets/mercedes.jpg");
 }
 
 
@@ -356,26 +357,20 @@ border-radius:10px;
   background-image: url("./assets/customer.jpg");
 }
 
-.hero {
-
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
+.hero{
     background:
     linear-gradient(
         135deg,
-        rgba(0,0,0,0.75),
-        rgba(20,20,50,0.75)
+        rgba(0,0,0,.75),
+        rgba(20,20,50,.75)
     ),
-    url("/images/luxury-car.jpg");
+    url("./assets/car-bg.jpg");
 
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-
 
 
 .overlay {
@@ -607,7 +602,7 @@ border-radius:10px;
 
 
 .car-image.suv {
-    background-image:url("./assets/SUV.jpg");
+   background-image: url("./assets/suv.jpg");
 }
 
 
@@ -616,7 +611,7 @@ border-radius:10px;
 }
 
 .car-image.hatch {
-    background-image:url("./assets/hatchback.jpg");
+    background-image: url("./assets/hatchback.jpg");
 
 }
 
@@ -763,7 +758,7 @@ border-radius:10px;
     justify-content:center;
     align-items:center;
     text-align:center;
-    font: size 60px;
+  font-size: 60px;
     font-weight:900;
     color:#433b06;
     text-transform:uppercase;
@@ -1115,26 +1110,17 @@ border-radius:10px;
 }
 
 .navbar {
-
-    width:100%;
-    padding:18px 50px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background:
-    linear-gradient(
-        135deg,
-        #111827,
-        #1f2937
-    );
-    box-shadow:
-    0 8px 25px rgba(0,0,0,0.4);
-    position:sticky;
-
-    top:0;
-    z-index:1000;
+  width: 100%;
+  padding: 18px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #111827, #1f2937);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
-
 
 .navbar h2 {
 
