@@ -1,48 +1,96 @@
-.app {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  background: #f9f9f9;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Poppins",sans-serif;
 }
-h1 {
-  text-align: center;
-  color: #2c3e50;
+body{
+height:100vh;
 }
-section {
-  margin: 20px 0;
-  padding: 15px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+.auth-container{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#667eea,#764ba2);
 }
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
+.auth-card{
+width:380px;
+padding:40px;
+background:white;
+border-radius:25px;
+box-shadow:0 20px 40px rgba(0,0,0,0.25);
+animation:slide 0.5s ease;
 }
-th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: center;
+@keyframes slide{
+from{
+transform:translateY(40px);
+opacity:0;
 }
-th {
-  background: #2c3e50;
-  color: #fff;
+to{
+transform:translateY(0);
+opacity:1;
 }
-form {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 15px;
 }
-input, select, button {
-  padding: 8px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+.logo{
+width:70px;
+height:70px;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:35px;
+background:#eef2ff;
+border-radius:50%;
+margin-bottom:20px;
 }
-button {
-  background: #27ae60;
-  color: #fff;
-  cursor: pointer;
+h2{
+text-align:center;
+font-size:28px;
+color:#333;
 }
-button:hover {
-  background: #219150;
+.subtitle{
+text-align:center;
+color:#777;
+margin:10px 0 30px;
+}
+.input-box input{
+width:100%;
+padding:14px 18px;
+margin-bottom:18px;
+border-radius:12px;
+border:1px solid #ddd;
+outline:none;
+font-size:15px;
+transition:.3s;
+}
+.input-box input:focus{
+border-color:#667eea;
+box-shadow:0 0 8px rgba(102,126,234,.4);
+}
+button{
+width:100%;
+padding:14px;
+border:none;
+border-radius:12px;
+background:linear-gradient(135deg,#667eea,#764ba2);
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+}
+button:hover{
+transform:translateY(-2px);
+box-shadow:0 10px 20px rgba(118,75,162,.3);
+}
+.bottom-text{
+text-align:center;
+margin-top:25px;
+color:#666;
+}
+.bottom-text a{
+color:#667eea;
+font-weight:bold;
+text-decoration:none;
+margin-left:5px;
 }
